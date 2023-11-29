@@ -1,0 +1,13 @@
+name: Dependabot Auto Merge
+on:
+  pull_request:
+
+jobs:
+  auto-merge:
+    if: github.repository == 'LJason77/bilibili-blocker' && github.actor == 'dependabot[bot]' && github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v3

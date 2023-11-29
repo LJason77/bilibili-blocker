@@ -1,0 +1,21 @@
+[package]
+name = "bilibili-blocker"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+authors = ["LJason <ljason@ljason77.com>"]
+repository = "https://github.com/LJason77/bilibili-blocker"
+license-file = "LICENSE"
+readme = "README.md"
+
+[lints.clippy]
+pedantic = "deny"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+opt-level = "z"
+panic = "abort"
+strip = "symbols"
+
+[dependencies]

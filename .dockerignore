@@ -1,0 +1,14 @@
+.git/
+.github/
+.idea/
+build/
+target/
+tests/
+.dockerignore
+.env*
+.gitignore
+Dockerfile
+LICENSE
+mongo-init.js
+*.md
+*.example
